@@ -1,0 +1,47 @@
+#wrapper_connect {
+  padding: 47px var(--default-padding);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(5, 40, 68, 0.98), rgba(5, 40, 68, 0.98)),
+    url("./main_bg.svg") no-repeat center/cover;
+}
+
+#connect_title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#connect_body {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+/*----------------------------
+------------------------------
+-------- MOBILE ONLY --------
+------------------------------
+----------------------------*/
+
+@media only screen and (max-width: 480px) {
+  #wrapper_connect {
+    padding: 20px var(--default-padding);
+  }
+  
+  #connect_title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  
+  #connect_body {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

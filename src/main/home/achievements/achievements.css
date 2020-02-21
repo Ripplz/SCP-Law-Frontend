@@ -1,0 +1,156 @@
+#wrapper_achievements {
+  display: flex;
+  flex-flow: column;
+  padding: 0px var(--default-padding);
+  margin-bottom: 36px;
+  background-color: #ffffff;
+}
+
+#depictor_achievements {
+  width: 50px;
+  height: 5px;
+  background-color: #00569d;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+#achievements_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+#wrapper_achievements_cta {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+#achievements_cta_text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-right: 12px;
+}
+
+#achievements_cta {
+  color: rgba(0, 86, 157, 0.8);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#achievements_cta::after {
+  content: url("../../../images/right_arrow_cta.svg");
+  padding-left: 6px;
+}
+
+#wrapper_achievements_main {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.wrapper_achievement {
+  display: flex;
+  flex-flow: column;
+  width: 35%;
+  margin-bottom: 50px;
+}
+
+.empty_view_achievements {
+  width: 15%;
+}
+
+.achievement_icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.achievement_title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.achievement_body {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  max-width: 436px;
+  text-align: justify;
+}
+
+#achievement_icon_one {
+  background: url("./medal_icon.svg") no-repeat center/cover;
+}
+
+#achievement_icon_two {
+  background: url("./handshake_icon.svg") no-repeat center/cover;
+}
+
+#achievement_icon_three {
+  background: url("./law_icon.svg") no-repeat center/cover;
+}
+
+#achievement_icon_four {
+  background: url("./medal_icon.svg") no-repeat center/cover;
+}
+
+/*----------------------------
+------------------------------
+-------- MOBILE ONLY --------
+------------------------------
+----------------------------*/
+
+@media only screen and (max-width: 480px) {
+  #wrapper_achievements {
+    margin-bottom: 30px;
+  }
+
+  #wrapper_achievements_cta {
+    flex-flow: column;
+  }
+
+  #achievements_cta_text {
+    margin-bottom: 5px;
+  }
+
+  #wrapper_achievements_main {
+    flex-flow: column;
+  }
+
+  #depictor_achievements {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 7px;
+  }
+
+  .wrapper_achievement {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .empty_view_achievements {
+    display: none;
+  }
+
+  .achievement_icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .achievement_title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .achievement_body {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

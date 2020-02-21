@@ -1,0 +1,352 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#wrapper_homepage {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  --default-padding: calc((100vw / 1440) * 100);
+}
+
+#main_section_wrapper {
+  background-image: url("../../images/homepage_main.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  height: 708px;
+  padding: 30px var(--default-padding);
+  margin-bottom: 51px;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  color: #333333;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  margin-bottom: 149px;
+}
+
+#img_main_logo {
+  background-image: url("../../images/scp-law-header-logo.svg");
+  background-repeat: no-repeat;
+  width: 219px;
+  height: 19px;
+  cursor: pointer;
+}
+
+#nav_links_wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.nav_link {
+  margin: 0 20px;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav_link:hover,
+#nav_search_img:hover,
+#main_section_cta_secondary:hover {
+  color: #8baeca;
+}
+
+#nav_search_img {
+  background-image: url("../../images/search_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+#nav_search_img:hover {
+  background-image: url("../../images/search_icon_2.svg");
+}
+
+#navbar_menu_controller {
+  display: none;
+}
+
+#wrapper_menu_links {
+  display: none;
+}
+
+#main_section_title {
+  text-transform: uppercase;
+  font-family: "Times New Roman PS", Times, serif;
+  font-weight: 600;
+  font-size: calc((100vw / 1440) * 100);
+  color: #00569d;
+  margin-bottom: 50px;
+}
+
+#main_section_subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+#main_section_text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+#main_section_actions_wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+#btn_main_section_cta {
+  background-color: #00569d;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 18px 30px;
+  margin-right: 20px;
+  border: 1px solid transparent;
+  box-shadow: 0 6px 10px 0 rgba(170, 48, 48, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#btn_main_section_cta:hover {
+  background-color: #3378b1;
+}
+
+#main_section_cta_secondary {
+  color: rgba(0, 86, 157, 0.8);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#main_section_cta_secondary:hover {
+  color: #00569d;
+}
+
+#main_section_cta_secondary::after {
+  content: url("../../images/dropdown_arrow.svg");
+  padding-left: 6px;
+}
+
+#main_section_cta_secondary:hover::after {
+  content: url("../../images/dropdown_arrow_2.svg");
+}
+
+/*----------------------------
+------------------------------
+-------- TABLET ONLY --------
+------------------------------
+----------------------------*/
+
+@media only screen and (max-width: 800px) {
+  #main_section_wrapper {
+    background-image: url("../../images/homepage_main_small.svg");
+    height: 395px;
+    padding: 22px var(--default-padding);
+    margin-bottom: 30px;
+  }
+
+  #img_main_logo {
+    background-image: url("../../images/scp-law-header-logo_small.svg");
+    width: 122px;
+    height: 11px;
+  }
+
+  #navbar {
+    margin-bottom: 49px;
+  }
+
+  .nav_link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  #nav_search_img {
+    background-image: url("../../images/search_icon_small.svg");
+  }
+
+  #nav_search_img:hover {
+    background-image: url("../../images/search_icon_small_2.svg");
+  }
+
+  #main_section_title {
+    margin-bottom: 20px;
+  }
+
+  #main_section_subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  #main_section_text {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 393px;
+    margin-bottom: 20px;
+  }
+
+  #btn_main_section_cta {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 13px 30px;
+    margin-right: 10px;
+  }
+
+  #main_section_cta_secondary {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  #main_section_cta_secondary:hover {
+    color: #00569d;
+  }
+
+  #main_section_cta_secondary::after {
+    content: url("../../images/dropdown_arrow.svg");
+    padding-left: 6px;
+  }
+
+  #main_section_cta_secondary:hover::after {
+    content: url("../../images/dropdown_arrow_2.svg");
+  }
+}
+
+/* END OF TABLET */
+
+/*----------------------------
+------------------------------
+-------- MOBILE ONLY --------
+------------------------------
+----------------------------*/
+
+@media only screen and (max-width: 480px) {
+  #wrapper_homepage {
+    --default-padding: 15px;
+  }
+
+  #main_section_wrapper {
+    background-image: url("../../images/homepage_main_mobile.svg");
+    height: 232px;
+    padding: 14px var(--default-padding) 0px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  #img_main_logo {
+    background-image: url("../../images/scp-law-header-logo_mobile.svg");
+    width: 122px;
+    height: 11px;
+  }
+
+  #navbar {
+    margin-bottom: 0px;
+  }
+
+  #nav_links_wrapper {
+    display: none;
+  }
+
+  #navbar_menu_controller {
+    display: inline-block;
+    background: url("../../images/menu.svg") no-repeat center/cover;
+    width: 20px;
+    height: 10px;
+  }
+
+  #wrapper_menu_links {
+    display: none;
+    width: 95%;
+    background: linear-gradient(rgba(5, 40, 68, 0.9), rgba(5, 40, 68, 0.9)),
+      no-repeat center/cover;
+    flex-flow: column;
+    margin-top: 8px;
+    z-index: 10;
+    position: absolute;
+    /* align-content: center;
+    align-items: center; */
+  }
+
+  .menu_link {
+    padding: 8px 16px;
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    text-align: center;
+  }
+
+  .menu_link:active {
+    background-color: #8baeca;
+  }
+
+  #wrapper_menu_links a {
+    /* color: inherit; */
+    text-decoration: none;
+  }
+
+  #navbar_menu_controller:active {
+    background: url("../../images/menu_active.svg") no-repeat center/cover;
+  }
+
+  #main_section_title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+
+  #main_section_subtitle {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  #main_section_text {
+    position: absolute;
+    /* margin-top: 60px; */
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 393px;
+    margin-bottom: 20px;
+    bottom: -100px;
+    text-align: center;
+    color: #808080;
+  }
+
+  #btn_main_section_cta {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+
+  #main_section_cta_secondary {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+/* END OF MOBILE */
